@@ -1,1 +1,28 @@
-TBD
+Translation Alien
+=================
+
+A small futuristic training app built with Tkinter for Windows (and other desktop platforms). Players run through recognition rounds for six-symbol sets, practice typing French words using a custom glyph font, then access a live translator between glyphs and French.
+
+## Features
+- Seven rounds of glyph recognition with six-symbol choices and a "none recognized" option.
+- Typing practice for French prompts using your own font encoding.
+- Live translator panel to convert from glyphs to French and vice‑versa based on your supplied dictionary.
+- Neon-inspired styling to feel at home in a sci-fi interface.
+
+## Running the app
+1. Ensure Python 3.10+ is installed on Windows (Tkinter ships with the default installer).
+2. From the repository root, launch the app:
+   ```bash
+   python app.py
+   ```
+
+## Customizing with your font
+- Update `data/recognition_sets.json` with the six-symbol sets you want to display in the first step.
+- Add or edit word mappings in `data/lexicon.json`.
+  - `practice_words` controls which French prompts appear in the typing phase.
+  - `dictionary` maps French words to their glyph string; the reverse lookup is generated automatically.
+- Install your custom font on Windows so Tkinter can render it, then change the `family` in `TranslationAlienApp` if desired.
+
+## Notes
+- The app stores the JSON data on first launch if the files are missing, so you can freely delete or swap the contents while testing.
+- Interface layout is fixed at 720×780 to keep proportions consistent across Windows systems.
