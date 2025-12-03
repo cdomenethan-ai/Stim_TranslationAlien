@@ -1,0 +1,12 @@
+{
+  "practice_words": ["soleil", "lune", "étoile", "terre", "eau"],
+  "dictionary": {
+    "soleil": "◉sol",
+    "lune": "☾une",
+    "étoile": "✦toile",
+    "terre": "⟁terre",
+    "eau": "≈eau",
+    "vent": "〄vent",
+    "feu": "🔥feu"
+  }
+}
